@@ -210,7 +210,7 @@ def execute_batch_unke(model, tok, config, batch_data, ex_data):
         for step in range(config.optim_num_step):
             optimizer.zero_grad()
 
-            # ===== PIPE替换loss =====
+            # ===== PIPE =====
             for i in range(len(batch_data)):
 
                 ts_i = tangle_scores[i]
